@@ -1,38 +1,63 @@
-.menu .box-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap:1.5rem;
+*{
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
 }
 
-.menu .box-container .box{
-    padding:5rem;
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open sans' ,sans-serif;
+}
+
+.wrapper{
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+.logo a{
+    font-size: 50px;
+    font-weight: 800;
+    float: left;
+    font-family: courier;
+    color: #364f6b;
+}
+
+.menu{
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #FFFFFFF;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a{
+    color: black;
+    font-weight: bold;
     text-align: center;
-    border: var(--border);
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
 }
 
-.menu .box-container .box img{
-    height: 10rem;
-}
-
-.menu .box-container .box h3{
-    color: #fff;
-    font-size: 2rem;
-    padding: 1rem 0;
-}
-
-.menu .box-container .box .price{
-    color: #fff;
-    font-size: 2.5rem;
-    padding: 5rem 0;
-}
-.menu .box-container .box .price span{
-    color: #fff;
-    font-size: 1.5rem;
-    text-decoration: line-through;
-}
-.menu .box-container .box:hover{
-    background: #fff;
-}
-.menu .box-container .box:hover > *{
-    color: var(--black);
+nav ul li a:hover{
+    text-decoration: underline;
 }
